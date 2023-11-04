@@ -18,10 +18,10 @@ import Userimg from '../components/Userimg';
 import Cloudinary from '../components/Cloudinary';
 import cloudStyles from '../styles/cloudinary.module.css';
 
-const CLOUDNAME = NEXT_PUBLIC_CLOUDNAME;
-const UPLOAD_PRESET = NEXT_PUBLIC_UPLOAD_PRESET;
-const API_KEY = NEXT_PUBLIC_API_KEY;
-const TAGS = NEXT_PUBLIC_TAGS;
+const CLOUDNAME = process.env.NEXT_PUBLIC_CLOUDNAME;
+const UPLOAD_PRESET = process.env.NEXT_PUBLIC_UPLOAD_PRESET;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const TAGS = process.env.NEXT_PUBLIC_TAGS;
 
 export default function Candidates() {
   const router = useRouter();
