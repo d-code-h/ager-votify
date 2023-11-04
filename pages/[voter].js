@@ -199,100 +199,51 @@ export default function Voters() {
                         value={position}
                         onChange={(e) => setposition(e.target.value)}
                       >
-                        <option value="face of 100">FACE OF 100</option>
-                        <option value="face of 200">FACE OF 200</option>
-                        <option value="face of 300">FACE OF 300</option>
-                        <option value="face of 400">FACE OF 400</option>
-                        <option value="final year student of the year">
-                          FINAL YEAR STUDENT OF THE YEAR
-                        </option>
-                        <option value="campus face of Gk">
-                          CAMPUS FACE OF GK
-                        </option>
-                        <option value="campus face of bosso">
-                          CAMPUS FACE OF BOSSO
-                        </option>
-                        <option value="face of Semt">FACE OF SEMT </option>
-                        <option value="face of Saat">FACE OF SAAT </option>
-                        <option value="face of Sste">FACE OF SSTE </option>
-                        <option value="face of SIpet">FACE OF SIPET </option>
-                        <option value="face of Sps">FACE OF SPS </option>
-                        <option value="face of Sls">FACE OF SLS </option>
-                        <option value="face of seet">FACE OF SEET </option>
-                        <option value="face of sict">FACE OF SICT</option>
-                        <option value="face of Set">FACE OF SET </option>
-                        <option value="Sportsman of the year">
-                          SPORTSMAN OF THE YEAR{' '}
-                        </option>
-                        <option value="cool Calm and Collected">
-                          COOL CALM AND COLLECTED{' '}
-                        </option>
-                        <option value="Best wardrobe male">
-                          BEST WARDROBE MALE{' '}
-                        </option>
-                        <option value="Best wardrobe female">
-                          BEST WARDROBE FEMALE{' '}
-                        </option>
-                        <option value="Model of the Year">
-                          MODEL OF THE YEAR{' '}
-                        </option>
-
-                        <option value="Photographer of the year">
-                          PHOTOGRAPHER OF THE YEAR
-                        </option>
-                        <option value="Entrepreneur of the year">
-                          ENTREPRENEUR OF THE YEAR{' '}
-                        </option>
-                        <option value="best clique">BEST CLIQUE</option>
-
-                        <option value="Hourglass">HOURGLASS</option>
-                        <option value="mr ebony">MR EBONY </option>
-                        <option value="Miss ebony">MISS EBONY </option>
-                        <option value="most social">MOST SOCIAL </option>
-                        <option value="Comedian of the year">
-                          COMEDIAN OF THE YEAR{' '}
-                        </option>
-                        <option value="Dj of the year">DJ OF THE YEAR </option>
-                        <option value="Most popular male">
-                          MOST POPULAR MALE
-                        </option>
-                        <option value="Most popular female">
-                          MOST POPULAR FEMALE{' '}
-                        </option>
-                        <option value="Slim shady">SLIM SHADY </option>
-                        <option value="OAP of the year (searchfm )">
-                          OAP OF THE YEAR (SEARCHFM ){' '}
-                        </option>
-                        <option value="Artist of the year">
-                          ARTIST OF THE YEAR{' '}
-                        </option>
-                        <option value="Content creator of the year">
-                          CONTENT CREATOR OF THE YEAR{' '}
-                        </option>
-                        <option value="Vibrant Statement">
-                          VIBRANT STATEMENT{' '}
-                        </option>
-                        <option value="Faculty President of Year (19/20)">
-                          FACULTY PRESIDENT OF YEAR (19/20){' '}
-                        </option>
-                        <option value="Most political">MOST POLITICAL </option>
-
-                        <option value="Scholar of the year">
-                          SCHOLAR OF THE YEAR{' '}
-                        </option>
-                        <option value="Big Bold and Beautiful">
-                          BIG BOLD AND BEAUTIFUL{' '}
-                        </option>
-                        <option value="Graphic designer or the year">
-                          GRAPHIC DESIGNER OR THE YEAR
-                        </option>
-                        <option value="Most expensive">MOST EXPENSIVE </option>
-                        <option value="Techpreneur of the Year">
-                          TECHPRENEUR OF THE YEAR
-                        </option>
-                        <option value="Business Icon of the Year">
-                          BUSINESS ICON OF THE YEAR
-                        </option>
+                         <option value="Mr fresher">Mr fresher</option>
+                            <option value="Miss fresher">Miss fresher</option>
+                            <option value="Face of 200L (8:0clock face)">Face of 200L (8:0clock face)</option>
+                            <option value="Face of 300L (Attendance face)">Face of 300L (Attendance face)</option>
+                            <option value="Face of 400L (IT face)">Face of 400L (IT face)</option>
+                            <option value="Face of 500L (finalist Face)">Face of 500L (finalist Face)</option>
+                            <option value="Most political Award">Most political Award</option>
+                            <option value="Mr Agric">Mr Agric</option>
+                            <option value="Mr Agric">Mr Agric</option>
+                            <option value="Miss Agric">Miss Agric</option>
+                            <option value="Hour glass">Hour glass</option>
+                            <option value="Hour glass">Hour glass</option>
+                            <option value="Best wardrobe">Best wardrobe</option>
+                            <option value="Entrepreneurship of the Year">Entrepreneurship of the Year</option>
+                            <option value="Class rep of the year">Class rep of the year</option>
+                            <option value="Sportsmanship Award">Sportsmanship Award</option>
+                            <option value="Most expensive Award">Most expensive Award</option>
+                            <option value="Photographer of the Year">Photographer of the Year</option>
+                            <option value="Media Award">Media Award</option>
+                            <option value="Alumni of the Year">Alumni of the Year</option>
+                            <option value="Award of recognition">Award of recognition</option>
+                            <option value="Mr ebony">Mr ebony</option>
+                            <option value="Miss ebony">Miss ebony</option>
+                            <option value="Cool calm  and collected">Cool calm  and collected</option>
+                            <option value="Best lecturer">Best lecturer</option>
+                            <option value="Model of the year">Model of the year</option>
+                            <option value="Intellect of the year">Intellect of the year</option>
+                            <option value="Hypeman of the year">Hypeman of the year</option>
+                            <option value="Face of Agric">Face of Agric</option>
+                            <option value="Leadership Award">Leadership Award</option>
+                            <option value="Ambassador of the year">Ambassador of the year</option>
+                            <option value="Slim shady">Slim shady</option>
+                            <option value="Big bold and beautiful">Big bold and beautiful</option>
+                            <option value="Brand of the Year">Brand of the Year</option>
+                            <option value="Artist of the year">Artist of the year</option>
+                            <option value="Most influential">Most influential</option>
+                            <option value="Most popular">Most popular</option>
+                            <option value="Departmental president of the year">Departmental president of the year</option>
+                            <option value="Departmental DOS of the year">Departmental DOS of the year</option>
+                            <option value="Fashionista & trends">Fashionista & trends</option>
+                            <option value="Most reserve M">Most reserve M</option>
+                            <option value="Most reserve F">Most reserve F</option>
+                            <option value="Executive of the year">Executive of the year</option>
+                            <option value="Graphic designer of the year">Graphic designer of the year</option>
+                            <option value="Perseverance & Exemplary Award">Perseverance & Exemplary Award</option>
                       </select>
                     </div>
                   </form>
