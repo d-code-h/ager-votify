@@ -18,6 +18,11 @@ import Userimg from '../components/Userimg';
 import Cloudinary from '../components/Cloudinary';
 import cloudStyles from '../styles/cloudinary.module.css';
 
+const CLOUDNAME = NEXT_PUBLIC_CLOUDNAME;
+const UPLOAD_PRESET = NEXT_PUBLIC_UPLOAD_PRESET;
+const API_KEY = NEXT_PUBLIC_API_KEY;
+const TAGS = NEXT_PUBLIC_TAGS;
+
 export default function Candidates() {
   const router = useRouter();
   const [fname, setfname] = useState('');
@@ -54,9 +59,9 @@ export default function Candidates() {
       try {
         const formData = new FormData();
         formData.append('file', image);
-        formData.append('tags', `voting`);
-        formData.append('upload_preset', 'ager-votify');
-        formData.append('api_key', '442127769626262');
+        formData.append('tags', TAGS);
+        formData.append('upload_preset', UPLOAD_PRESET);
+        formData.append('api_key', API_KEY);
         formData.append(
           'timestamp',
           // eslint-disable-next-line newline-per-chained-call
@@ -64,7 +69,7 @@ export default function Candidates() {
         );
 
         const uploadResponse = await axios.post(
-          'https://api.cloudinary.com/v1_1/david1/image/upload',
+          `https://api.cloudinary.com/v1_1/${CLOUDNAME}/image/upload`,
           formData,
           { headers: { 'X-Requested-With': 'XMLHttpRequest' } }
         );
@@ -72,10 +77,6 @@ export default function Candidates() {
       } catch (err) {
         return console.log(err);
       }
-
-      // const uploadResponses = await Axios.all(uploads);
-
-      // console.log(uploadResponses);
     } catch (err) {
       return console.error(err);
     }
