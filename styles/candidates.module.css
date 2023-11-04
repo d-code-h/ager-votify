@@ -5,8 +5,9 @@
 .main,
 .main_voted {
   /* background-position: center; */
-  background-size: 100px 100px;
-  background-image: url('../public/photo.jpg');
+  /* background-size: 100px 100px; */
+  background-size: cover;
+  background-image: url('../public/main.jpg');
   position: relative;
   /* height: 100%; */
   height: calc(100vh + 450px);

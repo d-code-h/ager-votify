@@ -23,9 +23,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../public/photo.jpg');
-  background-position: center;
-  background-size: 200px 200px;
+  background-image: url('../public/main.jpg');
+  background-position: top;
+  background-size: cover;
 }
 
 .content {
@@ -47,7 +47,7 @@
 }
 .content_hero_img {
   border-radius: 50%;
-margin: 1rem auto;
+  margin: 1rem auto;
 }
 .heading {
   /* align-self: end; */
