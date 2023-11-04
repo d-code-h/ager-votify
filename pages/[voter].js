@@ -132,7 +132,7 @@ export default function Voters() {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
-            <link rel="icon" href="/main-logo-preview.png" />
+            <link rel="icon" href="/photo.jpg" />
           </Head>
           <main className={!voted ? styles.main : styles.main_voted}>
             <div

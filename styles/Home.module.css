@@ -23,9 +23,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../public/program.jpg');
+  background-image: url('../public/photo.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: 200px 200px;
 }
 
 .content {
@@ -46,7 +46,8 @@
   margin-bottom: 1rem;
 }
 .content_hero_img {
-  /* align-self: baseline; */
+  border-radius: 50%;
+margin: 1rem auto;
 }
 .heading {
   /* align-self: end; */
