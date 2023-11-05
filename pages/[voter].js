@@ -292,6 +292,11 @@ export default function Voters() {
                           Ambassador of the year
                         </option>
                         <option value="Mc of the year">Mc of the year</option>
+                        <option value="Most Social">Most Social</option>
+
+                        <option value="Couple of the year">
+                          Couple of the year
+                        </option>
                       </select>
                     </div>
                   </form>
