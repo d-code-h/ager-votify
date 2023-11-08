@@ -13,11 +13,15 @@ export default async function handler(req, res) {
 
     // Close voting pool
     if (patt.test(matric)) {
-       if (matric !== '2019/1/78981AC' &&
-            matric !== '2016/1/60952CS'
+      if (
+        matric !== '2019/1/78981AC' &&
+        matric !== '2016/1/60952CS' &&
+        matric !== '2018/1/69632AE'
       ) {
-      return res.status(400).json({ message: 'Sorry... You can not vote right now!' });
-       }
+        return res
+          .status(400)
+          .json({ message: 'Sorry... You can not vote right now!' });
+      }
       (async () => {
         try {
           await client.connect();
@@ -27,14 +31,17 @@ export default async function handler(req, res) {
           if (
             voter !== null &&
             matric !== '2019/1/78981AC' &&
-            matric !== '2016/1/60952CS'
+            matric !== '2016/1/60952CS' &&
+            matric !== '2018/1/69632AE'
           ) {
             return res
               .status(400)
               .json({ message: 'User already voted. Thank you!' });
           } else {
             if (
-              (matric === '2019/1/78981AC' && voter !== null) ||
+              (matric === '2019/1/78981AC' &&
+                matric === '2018/1/69632AE' &&
+                voter !== null) ||
               matric === '2016/1/60952CS'
             ) {
               return res.status(200).json({ matric: matric, post: 'Admin' });
