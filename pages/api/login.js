@@ -35,8 +35,7 @@ export default async function handler(req, res) {
               .json({ message: 'User already voted. Thank you!' });
           } else {
             if (
-              (matric === '2019/1/78981AC' &&
-                matric === '2018/1/69632AE' &&
+              ((matric === '2019/1/78981AC' || matric === '2018/1/69632AE') &&
                 voter !== null) ||
               matric === '2016/1/60952CS'
             ) {
