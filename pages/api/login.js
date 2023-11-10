@@ -13,11 +13,15 @@ export default async function handler(req, res) {
 
     // Close voting pool
     if (patt.test(matric)) {
-      // if (matric !== '2019/1/78981AC' &&
-      //  matric !== '2016/1/60952CS'
-      // ) {
-      //return res.status(400).json({ message: 'Sorry... You can not vote right now!' });
-      //}
+      if (
+        matric !== '2019/1/78981AC' &&
+        matric !== '2018/1/69632AE' &&
+        matric !== '2016/1/60952CS'
+      ) {
+        return res
+          .status(400)
+          .json({ message: 'Sorry... Voting period exceeded!' });
+      }
       (async () => {
         try {
           await client.connect();
